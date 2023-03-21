@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const IsOnline = styled.span`
   position: absolute;
@@ -7,14 +7,14 @@ export const IsOnline = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${(props) => {
+  background-color: ${props => {
     switch (props.type) {
       case true:
-        return "green";
+        return 'green';
       case false:
-        return "grey";
+        return 'red';
       default:
-        return "black";
+        return 'black';
     }
   }};
 `;

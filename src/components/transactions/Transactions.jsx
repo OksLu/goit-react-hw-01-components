@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import {
   Table,
   TableHeader,
   TableCell,
   TableTitle,
   TableRow,
-} from "./Transactions.styled";
+} from './Transactions.styled';
 
 export const TransactionHistory = ({ transactions }) => {
   return (
@@ -41,5 +41,5 @@ TransactionHistory.prototype = {
     type: PropTypes.string.isRequired,
     amaunt: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 };
